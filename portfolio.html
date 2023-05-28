@@ -1,0 +1,180 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>code</title>
+    <style>
+        header{
+            width: 1000px;
+            height: 800px;
+            background-color:black;
+        }
+        h5,h1,p{
+            color:aliceblue;
+        }
+        .home-link{
+            font-size: larger;
+        }
+        .left flex-1 justify-center{
+            text-align: left;
+        }
+        .about{
+            background-color: cornsilk;
+            width: 1000px;
+            height: 500px;
+        }
+        .services{
+            background-color: black;
+            width: 1000px;
+            height: 150px;
+        }
+        #contact-form{
+            background-color: cornsilk;
+            width: 1000px;
+            height: 150px;
+        }
+        h5{
+            color: aqua;
+        }
+        .developer1{
+            color: aqua;
+        }
+        .btn-tbn-secondary{
+            background-color: aqua;
+            color: black;
+        }
+        .right-flex-1 h1{
+            color: black;
+        }
+        .about-me{
+            color: aqua;
+        }
+        .right-flex-1 p{
+            color: black;
+        }
+        .image-spacing{
+            margin-right:20px;
+        }
+        .services .container p{
+            color: aqua;
+        }
+        h2{
+            color: aqua;
+        }
+        .right flex-1{
+            text-align: right;
+            
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav class="flex items-center justify-between">
+             <div class="left flex justify-right">
+                <div class="logo">
+                    <img src="https://mrinal1224.github.io/portfolio-Project-Scaler/assets/scaler-academy%20logo%202.png" width="50px" alt="scaler logo">
+                </div>
+                <div class="home-link">
+                    <a href="#">Home</a>
+                    <a href="#">About</a>
+                    <a href="#">Projects</a>
+                    <a href="#">Blog</a>
+                </div>
+             </div>   
+            </nav>
+        </div>
+        <div class="flex items-center justify-between">
+         <div class="left flex-1 justify-center">
+            <img src="./assets/IMG_20181117_091240_685.jpg" width="400px" alt="profile-img">
+         </div>   
+         <div class="right flex-1" style="float: right;">
+            <h5>Ganesh BM</h5>
+            <h1>
+                "I'm a Frontend"
+                <br>
+                <span class="developer1">Developer</span>
+            </h1>
+            <p>Description</p>
+            <div>
+                <button class="btn-tbn-secondary">DOWNLOAD RESUME</button>
+            </div>
+         </div>
+        </div>
+    </header>
+    <section class="about" >
+        <div class="container flex items-center" style="display: flex; justify-content: center; align-items: center;">
+            <div class="left flex-1 justify-right" style="display: flex; justify-content:left;">
+                <img src="./assets/IMG-20200131-WA0009.jpg" height="400px" alt="img1">
+            </div>
+            <div class="right-flex-1">
+                <h1>
+                    "About"
+                    <span class="about-me">Me</span>
+                </h1>
+                <h3>Hello! I'm Ganesh BM</h3>
+                <p>Hardworking and passionate job seeker with strong organizational skills eager to secure entry-level programmer position. Ready to help team achieve company goals.</p>
+                <div class="socials">
+                    <a href="#">
+                        <img src="./assets/OIP (1).jpg" width="40px" class="image-spacing">
+                    </a>
+                    <a href="#">
+                        <img src="./assets/OIP (2).jpg" width="40px" class="image-spacing">
+                    </a>
+                    <a href="#">
+                        <img src="./assets/OIP.jpg" width="40px" class="image-spacing">
+                    </a>
+                    <a href="#">
+                        <img src="./assets/R.jpg" width="40px" class="image-spacing">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="services">
+        <div class="container">
+         <h1 class="services-head1" style="color: aqua; display: flex; justify-content: center;">My Projects</h1>
+         <p style="display: flex; justify-content: center; color: aliceblue;">I mostly work with HTML, Java, CSS, Javascript, React and Node</p>
+        <!-- <div class="card-grid"> 
+            <div class="card">
+                <img src="">
+                <h2>Calculator</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla, debitis?</p>
+            </div>
+            <div class="card">
+                <img src="./assets/cart png.png">
+                <h2>Shopping Cart</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla, debitis?</p>
+            </div>
+            <div class="card">
+                <img src="./assets/to do list.png">
+                <h2>To do List</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla, debitis?</p>
+            </div>
+          </div> -->
+        </div>
+    </section>
+    <section id="contact-form">
+        <h2 style="display: flex; justify-content: center;">Get in touch</h2>
+        <form class="contact_heading" id="contact" name="contact" accept-charset="utf-8">
+            <label style="display: flex; justify-content: center;">
+                <span class="form_input" style="color: aqua;">Name</span>
+                <br>
+                <input class="form_input" name="name" type="text" placeholder="Name">
+            </label>
+            <br>
+            <label style="display: flex; justify-content: center;">
+                <span class="form_input" style="color: aqua;">Email</span>
+                <br>
+                <input class="form_input" name="email" type="email" placeholder="Email">
+            </label>
+            <br>
+            <label style="display: flex; justify-content: center;">
+                <span class="form_input" style="color: aqua;">Message</span>
+                <br>
+                <input class="form_input" name="message" type="text" placeholder="Message" >
+            </label>
+        </form>
+    </section>
+</body>
