@@ -1,3 +1,5 @@
+@import "utility.css";
+
 :root{ 
      --primary:#5DA9E9; 
      --bgDark:rgb(12,12,12); 
@@ -97,3 +99,142 @@
      cursor: pointer; 
      padding: 0.75rem 2.25rem; 
  }
+
+ section{
+    padding: 1rem;
+ }
+
+ section.about h1{
+    margin-bottom: 1rem;
+    font-size: 1.75rem;
+    font-weight: 600;
+    margin-top: 8rem;
+ }
+
+section.about h1 span{
+    color: var(--primary);
+    
+}
+section.about h3{
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+section.about p{
+    color: var(--secondary);
+    line-height: 2;
+    margin-bottom: 2rem;
+    font-weight: 500;
+}
+
+section.about .socials a{
+    display: flex;
+    align-items: center;
+    margin-right: 2rem;
+}
+
+section.about .right{
+    margin-left: 10rem;
+}
+
+section.about .left{
+    margin-left: 5rem;
+    margin-top: 3rem;
+}
+
+section.about .left img{
+    border-radius: 3rem;
+}
+
+section.services{
+    background-color: var(--bgDark);
+}
+
+section.services .services-head{
+    color: var(--primary);
+    text-align: center;
+    margin-bottom: 1rem;
+    line-height: 1.5;
+}
+
+.services-head+p{
+    color: var(--white);
+    text-align: center;
+    margin-bottom: 5rem;
+    font-weight: 400;
+}
+
+.card img{
+    background-color: var(--white);
+}
+
+section.services .card-grid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    column-gap: 3;
+}
+
+section.services .card-grid .card{
+    background-color: var(--white);
+    margin: 1rem;
+    padding: 3rem 2rem;
+    text-align: center;
+    position: relative;
+    transition: all 0.25s ease;
+}
+
+section.services .card-grid .card img{
+    position: absolute;
+    top: -1.3rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+section.services .card-grid .card p{
+    color: var(--secondary);
+    line-height: 1.5;
+}
+
+section.services .card-grid .card:hover{
+    background-color: #5DA9E9;
+    cursor: pointer;
+    color: var(--white);
+}
+
+section.services .card-grid .card:hover h2{
+    color: var(--white);
+}
+
+section.services .card-grid .card:hover p{
+    color: var(--white);
+}
+
+.contact-form{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.contact-form h2{
+    margin-bottom: 2rem;
+    color: var(--primary);
+    font-size: 2.5rem;
+    font-weight: 100;
+}
+
+.form_input{
+    width: 100%;
+    padding: 0.5rem;
+    outline: none;
+    border: 1px solid #ccc;
+    margin-bottom: 1rem;
+}
+
+label>span{
+    font-size: 1.2rem;
+    color: var(--primary);
+}
+
+.submit_button{
+    background-color: var(--primary);
+    color: white;
