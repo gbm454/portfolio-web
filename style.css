@@ -237,5 +237,5 @@ label>span{
 
 .submit_button{
     background-color: var(--primary);
-    color: var(--primary);
+    color: var(--white);
 }
